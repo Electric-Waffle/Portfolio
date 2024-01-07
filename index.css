@@ -5,6 +5,7 @@
     margin-top: 1px;
     position: relative;
     bottom: 2px;
+    z-index: 0;
 }
 body{
     margin: 0;
@@ -23,14 +24,24 @@ body{
     justify-content: center;
     padding-top: 10px;
 }
+li, ul {
+    color: white;
+    font-family: 'Cascadia Code', sans-serif;
+    margin-bottom: 3px;
+}
+.lii {
+    margin-bottom:10px;
+    position: relative;
+    bottom: 10px;
+}
 h1 {
     text-align: center;
     font-size:7vw;
     margin-top: 4px;
     margin-bottom: 10px;
     font-family: 'Cascadia Code', sans-serif;                      
-    color: rgb(237, 129, 33);
-    text-shadow:
+    color: rgb(247, 191, 70);
+    text-shadow: /*En dessous, l'outline du texte*/
     -1px -1px 0 #000,
     3px -1px 0 #000,
     -1px 1px 0 #000,
@@ -41,7 +52,7 @@ h2 {
     padding-right: 5px;
     color: rgb(93, 211, 75);
     font-size: 1.55vw;
-    text-shadow:
+    text-shadow: /*En dessous, l'outline du texte*/
     -1px -1px 0 #000,
     3px -1px 0 #000,
     -1px 1px 0 #000,
@@ -122,4 +133,86 @@ body{
 }
 .box_2 a:hover p {
     display: flex; /*pour que le texte s'affiche sur les images*/
+}
+.cours {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.cours_scan {
+    display: inline-block;
+    width: 35vw;
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.cours_scan img{
+    width: 100%;
+}
+.cours-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cours-desc-box {
+    border: 2px white solid;
+}
+.desc-title {
+    text-align: center;
+    font-size: 2vw;
+}
+.desc-desc {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: justify;
+    font-size:1vw;
+}
+.back {
+    border: 5px gray solid;
+    border-radius: 25%;
+    padding: 3px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 3vw;
+    bottom: 1vw;
+    position: fixed;
+    font-size: 2vw;
+    font-family: 'Cascadia Code', sans-serif;
+    z-index: 10;
+}
+.sticky {
+    position: sticky;
+    color: white;
+    top: 80%;
+    text-align: end;
+    padding: 50px;
+    font-size: 20px;
+    z-index: 9;
+  }
+.up {
+    border: 5px gray solid;
+    border-radius: 100%;
+    padding: 3px 3px 0px 3px;
+    
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    
+    font-size: 2vw;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 1000;
+    z-index: 10;
+ 
+}
+html {
+    scroll-behavior:smooth;
+  }
+.social {
+    color: white;
+    text-decoration: none;
+}
+.social:hover {
+    color: gray;
 }
